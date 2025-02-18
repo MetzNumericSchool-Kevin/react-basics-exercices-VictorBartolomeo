@@ -10,12 +10,12 @@ export default function Exercice2() {
     );
 }
 
-function BoutonAppelArchibald(props) {
+function BoutonAppelArchibald({quandSorcierRepond}) {
     const message = "🧙Archibald : J'arrive, j'arrive Aventurier !"
     return (<button onClick={function handleClick() {
-        props.quandSorcierRepond(message)
+        quandSorcierRepond(message)
     }}>
-        Yo.
+        DRING DRING.
     </button>)
-
 }
+
